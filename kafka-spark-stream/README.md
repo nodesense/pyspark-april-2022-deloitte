@@ -1,3 +1,25 @@
+# Word count setup 
+
+```
+
+# open command prompt
+kafka-topics  --create --bootstrap-server localhost:9092 --replication-factor 1 --partitions 1 --topic words
+ kafka-topics  --create --bootstrap-server localhost:9092 --replication-factor 1 --partitions 1 --topic word-counts 
+
+# open command prompt
+
+kafka-console-producer --bootstrap-server localhost:9092 --topic words
+
+# open command prompt
+
+kafka-console-consumer --bootstrap-server localhost:9092 --topic  word-counts  --from-beginning 
+
+
+```
+
+
+
+
 ```
  anaconda  -- large
  
